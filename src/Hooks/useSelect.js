@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 
 const useSelect = ( stateInicial, opciones ) => {
-
-    console.log(opciones)
+    
     const [state, setState] = useState(stateInicial)
     
     const SelectNoticias = () => (

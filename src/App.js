@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import Header from './components/Header'
 import Formulario from './components/Formulario'
+import Listado from './components/Listado'
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
       <div className="container white">
         <Formulario
           setCategoria = {setCategoria}
+        />
+        <Listado 
+          noticias = {noticias}
         />
       </div>
     </Fragment>
