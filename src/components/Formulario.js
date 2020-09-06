@@ -4,16 +4,16 @@ import useSelect from '../Hooks/useSelect'
 
 import Styles from './Formulario.module.css'
 
-const Formulario = ( {setCategoria} ) => {
+const Formulario = ({ setCategoria }) => {
 
     const opciones = [
-        {cat:'general', nombre:'General'},
-        {cat:'business', nombre:'Negocios'},
-        {cat:'entertainment', nombre:'Entretenimiento'},
-        {cat:'health', nombre:'Salud'},
-        {cat:'science', nombre:'Ciencia'},
-        {cat:'sports', nombre:'Deportes'},
-        {cat:'technology', nombre:'Tecnología'}
+        { cat: 'general', nombre: 'General' },
+        { cat: 'business', nombre: 'Negocios' },
+        { cat: 'entertainment', nombre: 'Entretenimiento' },
+        { cat: 'health', nombre: 'Salud' },
+        { cat: 'science', nombre: 'Ciencia' },
+        { cat: 'sports', nombre: 'Deportes' },
+        { cat: 'technology', nombre: 'Tecnología' }
     ]
 
     const [categoria, SelectNoticias] = useSelect('general', opciones);
@@ -23,7 +23,7 @@ const Formulario = ( {setCategoria} ) => {
         setCategoria(categoria)
     }
 
-    return (  
+    return (
         <div className={`row ${Styles.buscador}`}>
             <div className="col s12 m8 offset-m2">
                 <form
@@ -43,5 +43,5 @@ const Formulario = ( {setCategoria} ) => {
         </div>
     );
 }
- 
+
 export default Formulario;
