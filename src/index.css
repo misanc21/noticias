@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.boton_pais {
+  margin-top: 0.5rem;
+  color: #FFF;
+  border: none;
+}
+.titulo {
+  font-weight: bold;
+}
+
+@media (max-width:542px){
+  .titulo {
+    font-size: 1.5rem!important;
+  }
+}

@@ -23,8 +23,8 @@ const Header = ({ titulo, setPais }) => {
     return (
         <nav>
             <div className="nav-wrapper light-blue bg-darken-3">
-                <a href="#!" className="brand-logo center"> {titulo} </a>
-                <ul className="right hide-on-med-and-down">
+                <a href="#!" className="brand-logo center titulo"> {titulo} </a>
+                <ul className="right">
                     <li>
                         <div className="row">
                             <div className="input-field col s12">

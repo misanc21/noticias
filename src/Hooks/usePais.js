@@ -5,7 +5,7 @@ const usePais = (stateInicial, opciones) => {
 
     const selectPais = () => (
         <select
-            className="browser-default"
+            className="browser-default blue darken-1 boton_pais"
             value={state}
             onChange={e => setState(e.target.value)}
         >
